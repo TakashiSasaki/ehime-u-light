@@ -1,0 +1,206 @@
+<html>
+  <title>愛媛大学受験情報サイト（サンプル）</title>
+  <style>
+    .tab-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .tab-wrap:after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: DeepSkyBlue;
+      display: block;
+      order: -1;
+    }
+    .tab-label {
+      color: White;
+      background: LightGray;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+      text-align: center;
+      padding: 10px 0.5em;
+      order: -1;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+      flex: 1;
+    }
+    .tab-label:not(:last-of-type) {
+      margin-right: 5px;
+    }
+    .tab-content {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+    }
+    /* アクティブなタブ */
+    .tab-switch:checked + .tab-label {
+      background: DeepSkyBlue;
+    }
+    .tab-switch:checked + .tab-label + .tab-content {
+      height: auto;
+      overflow: auto;
+      padding: 15px;
+      opacity: 1;
+      transition: 0.5s opacity;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+    /* ラジオボタン非表示 */
+    .tab-switch {
+      display: none;
+    }
+  </style>
+</html>
+<div class="tab-wrap">
+  <input
+    type="radio"
+    name="TAB"
+    class="tab-switch"
+    checked="checked"
+  /><label class="tab-label" for="TAB-01">入試</label>
+  <div class="tab-content">
+    コンテンツ 1
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-02"
+    >学びと研究</label
+  >
+  <div class="tab-content">
+    コンテンツ 2
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-03"
+    >大学生活</label
+  >
+  <div class="tab-content">
+    コンテンツ 3
+  </div>
+
+  <input  type="radio" name="TAB02" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB02-04"
+    >進路</label
+  >
+  <div class="tab-content">
+    コンテンツ 4
+  </div>
+</div>
+
+<div class="tab-wrap">
+  <input
+    type="radio"
+    name="TAB"
+    class="tab-switch"
+    checked="checked"
+  /><label class="tab-label" for="TAB-01">入試</label>
+  <div class="tab-content">
+    コンテンツ 1
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-02"
+    >学びと研究</label
+  >
+  <div class="tab-content">
+    コンテンツ 2
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-03"
+    >大学生活</label
+  >
+  <div class="tab-content">
+    コンテンツ 3
+  </div>
+
+  <input type="radio" name="TAB02" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB02-04"
+    >進路</label
+  >
+  <div class="tab-content">
+    コンテンツ 4
+  </div>
+</div>
+
+<div class="tab-wrap">
+  <input
+    type="radio"
+    name="TAB"
+    class="tab-switch"
+    checked="checked"
+  /><label class="tab-label" for="TAB-01">入試</label>
+  <div class="tab-content">
+    コンテンツ 1
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-02"
+    >学びと研究</label
+  >
+  <div class="tab-content">
+    コンテンツ 2
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-03"
+    >大学生活</label
+  >
+  <div class="tab-content">
+    コンテンツ 3
+  </div>
+
+  <input type="radio" name="TAB02" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB02-04"
+    >進路</label
+  >
+  <div class="tab-content">
+    コンテンツ 4
+  </div>
+</div>
+
+<div class="tab-wrap">
+  <input
+    type="radio"
+    name="TAB"
+    class="tab-switch"
+    checked="checked"
+  /><label class="tab-label" for="TAB-01">入試</label>
+  <div class="tab-content">
+    コンテンツ 1
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-02"
+    >学びと研究</label
+  >
+  <div class="tab-content">
+    コンテンツ 2
+  </div>
+  <input type="radio" name="TAB" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB-03"
+    >大学生活</label
+  >
+  <div class="tab-content">
+    コンテンツ 3
+  </div>
+
+  <input type="radio" name="TAB02" class="tab-switch" /><label
+    class="tab-label"
+    for="TAB02-04"
+    >進路</label
+  >
+  <div class="tab-content">
+    コンテンツ 4
+  </div>
+</div>
+
