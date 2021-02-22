@@ -10,4 +10,3 @@ RewriteRule ^.*$ light-test.html [L]
 Header set Pragma no-cache
 Header set Cache-Control no-cache
 </Files>
-
